@@ -1,0 +1,24 @@
+python3 ../../../main_linear.py \
+    --dataset cifar100 \
+    --backbone resnet18 \
+    --data_dir ./datasets \
+    --train_dir "cifar100/train" \
+    --val_dir "cifar100/val" \
+    --max_epochs 100 \
+    --gpus 0 \
+    --accelerator gpu \
+    --precision 16 \
+    --optimizer sgd \
+    --scheduler warmup_cosine \
+    --lr 0.3 \
+    --warmup_epochs 5 \
+    --weight_decay 0 \
+    --batch_size 256 \
+    --num_workers 4 \
+    --save_checkpoint \
+    --name byol-.25TE-cifar100-linear-eval \
+    --pretrained_feature_extractor "../../pretrain/cifar/trained_models/byol/byol/33utizbm/byol-cifar100-baseline-800-.25-TE-33utizbm-ep=799.ckpt" \
+    --project custom_byol \
+    --checkpoint_dir "trained_models/linear/" \
+    --output_dir results \
+    --wandb \

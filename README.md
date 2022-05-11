@@ -11,4 +11,4 @@ Derek Austin <da2986@columbia.edu>
 
 The folder solo-learn-temporal-ensembling holds the modified BYOL temporal ensembling code.
 
-The folder solo-learn holds the modified code used in all other experiments.
+The folder solo-learn @68a9d15 holds the modified code used in all other experiments.
